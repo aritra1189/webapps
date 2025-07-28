@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 require('dotenv').config();
 const port = 4000;
-app.use(cors({ origin: "https://webapps-qr3a.vercel.app/" }));
+app.use(cors({ origin: "https://webapps-hy6h.vercel.app/" }));
 app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('starting the serverr');
