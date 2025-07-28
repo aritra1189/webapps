@@ -22,7 +22,7 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/homepage");
+        const response = await fetch("https://webapps-6edm.onrender.com/api/homepage");
         const data = await response.json();
         if (data) {
           setMainContent({
