@@ -11,7 +11,7 @@ export const AdminHomePageEditor = () => {
     // Fetch existing content
     const fetchContent = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/homepage");
+        const res = await axios.get("https://webapps-6edm.onrender.com/api/homepage");
         if (res.data) {
           setMainImage(res.data.mainImage || "");
           setMainDescription(res.data.mainDescription || "");
@@ -29,7 +29,7 @@ export const AdminHomePageEditor = () => {
     setMessage("");
 
     try {
-      const res = await axios.post("http://localhost:4000/api/homepage/update", {
+      const res = await axios.post("https://webapps-6edm.onrender.com/api/homepage/update", {
         mainImage,
         mainDescription,
       });
