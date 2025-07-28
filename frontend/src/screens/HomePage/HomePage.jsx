@@ -16,8 +16,8 @@ export const HomePage = () => {
   const marketUpdate =
     "18/10/2024 | Soy Solvent Oil (Indore Market) Rs. 1170 - 1175 per 10 Kg. | 18/10/2024 - Soy Refined Oil (Indore Market) Rs. 1235 per";
   const [mainContent, setMainContent] = useState({
-    mainImage: "/image-2.png",
-    mainDescription: "SOPA is the only trade body in the country which works directly under the advice of the Ministry of Agriculture and Farmers Welfare, Government of India. It is recognized by the Government of India as the apex national body to look after the development of the soybean sector in India."
+    mainImage: "/main.png",
+    mainDescription: "Rich Source Of Protein."
   });
   useEffect(() => {
     const fetchData = async () => {
